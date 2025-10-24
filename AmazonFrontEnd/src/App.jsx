@@ -11,6 +11,10 @@ function App() {
     auth.onAuthStateChanged((authUser) => {
       if (authUser) {
         // console.log(authUser);
+        // console.log("Products from context:", state.products);
+        console.log("Products from context:", state.products);
+
+
         dispatch({
           type: Type.SET_USER,
           user: authUser,
